@@ -1,0 +1,227 @@
+.top-gif {
+    height: 45px;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 33;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 130px;
+    height: 32px;
+}
+
+header form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+}
+
+header form div {
+    border: 1px solid #c7c7cd;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+header button:hover {  background-color: #d46d06;}
+
+header input, header button {
+    border: 0;
+    outline: 0;
+    padding: 0.8rem 1rem;
+}
+
+header input {
+    width: 100%;
+}
+
+header ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: inherit;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr 1fr;
+    gap: 1%;
+}
+
+.list {
+    display: grid;
+    grid-template-rows: repeat(12,1fr);
+    align-items: center;
+    padding-left: 10px;
+}
+
+.list:hover {
+    cursor: pointer;
+    box-shadow: 0 0 12px 0 rgb(0 0 0 / 12%);
+}
+
+.list div:hover, header ul li:hover {
+    color: #e4811c;
+}
+
+.intro-right {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 3%;
+}
+
+.dope-stuff {
+    padding: 0;
+}
+
+.dope-stuff > div {
+    display: flex;
+    gap: 3%;
+    align-items: center;
+    padding: 10px;
+}
+
+.dope-stuff img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+.text h3 {
+    padding: 5px 8px;
+}
+
+.text p {
+    padding: 5px 8px;
+    line-height: 15px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 10%;
+    right: 2%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.back-to-top button {
+    border: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    box-shadow: 0 3px 7px 0 rgb(0 0 0 / 13%);
+}
+
+.back-to-top button:hover {
+    background-color: #feefde;
+}
+
+.f-top {background-color: #282828;}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 3%;
+    padding: 0.5rem 0 3.5rem;
+}
+
+footer form {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 1rem;
+    align-items: center;
+}
+
+footer form input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: inherit;
+    padding: 0.1rem 0.5rem;
+}
+
+footer form button {
+    border: 1px solid white;
+    padding: 0.5rem 0.8rem;
+    background-color: inherit;
+    color: white;
+    font-size: 1rem;
+}
+
+footer form button:hover {
+    border: 1px solid #e4811c;
+    color: #e4811c;
+}
+
+footer form div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.3rem 1rem;
+    background-color: #feefde;
+    color: black;
+}
+
+.f-bottom {
+    background-color: #323232;
+    padding-bottom: 3rem;
+}
+
+.footer-bottom-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-again div {
+    opacity: 0.7;
+    padding: 2px 0;
+    font-size: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    font-size: 1.7rem;
+    gap: 1.5rem;
+}
+
+.social-icons i:hover {
+    color: #e4811c;
+}
+
+
+@media  screen and (max-width:850px) {
+    html {font-size: 6px;}
+
+    header ul, .grid-again, .footer-bottom-grid {display: none;}
+
+    header form {width: 75%;}
+
+    .footer-top {
+        display: block;
+    }
+    
+}
